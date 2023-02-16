@@ -41,7 +41,8 @@ spec:
           failureThreshold: 3
         volumeMounts:
         - name: jenkins-home
-          mountPath: /var/jenkins_home
+          // mountPath: /var/jenkins_home
+          mountPath: /root/.m2/repository
       volumes:
       - name: jenkins-home
         persistentVolumeClaim:
